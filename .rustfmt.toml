@@ -1,0 +1,6 @@
+imports_layout = "HorizontalVertical"
+imports_granularity = "Crate"
+struct_field_align_threshold = 20
+max_width = 80
+hard_tabs = true
+tab_spaces = 2
