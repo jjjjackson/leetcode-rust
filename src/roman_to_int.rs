@@ -34,10 +34,10 @@ impl Solution {
 #[cfg(test)]
 mod tests {
 	use super::*;
-  use test_case::test_case;
-  
-	#[test_case("III",  3)]
-  #[test_case("MCMXCIV",  1994)]
+	use test_case::test_case;
+
+	#[test_case("III", 3)]
+	#[test_case("MCMXCIV", 1994)]
 	fn normal(input: &str, expect: i32) {
 		assert_eq!(Solution::roman_to_int(String::from(input)), expect);
 	}

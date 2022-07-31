@@ -4,10 +4,10 @@ impl Solution {
 	pub fn convert_string_to_vector(s: String) -> Vec<u32> {
 		let mut s_vec = vec![0u32; 26];
 
-    s.chars().for_each(|c| {
-      let digit = c as u32;
-      s_vec[(digit - 'a' as u32) as usize] += 1;
-    });
+		s.chars().for_each(|c| {
+			let digit = c as u32;
+			s_vec[(digit - 'a' as u32) as usize] += 1;
+		});
 
 		s_vec
 	}
@@ -17,9 +17,9 @@ impl Solution {
 			.into_iter()
 			.map(Solution::convert_string_to_vector)
 			.reduce(|mut acc, vec| {
-        vec.iter().enumerate().for_each(|(i,v)| {
-          acc[i] = acc[i].max(*v);
-        });
+				vec.iter().enumerate().for_each(|(i, v)| {
+					acc[i] = acc[i].max(*v);
+				});
 				acc
 			})
 			.unwrap();
@@ -109,7 +109,7 @@ mod tests {
 )]
 	#[test_case(vec!["amazon","apple","facebook","google","leetcode"], vec!["l","e"], vec!["apple","google","leetcode"]
 )]
-  #[test_case(vec!["apple","facebook"], vec!["plp","e"], vec!["apple"]
+	#[test_case(vec!["apple","facebook"], vec!["plp","e"], vec!["apple"]
 )]
 	fn success_cases(s: Vec<&str>, t: Vec<&str>, expected: Vec<&str>) {
 		let words1: Vec<String> = s.iter().map(|s| s.to_string()).collect::<_>();
