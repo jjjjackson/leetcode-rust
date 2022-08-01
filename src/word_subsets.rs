@@ -12,7 +12,10 @@ impl Solution {
 		s_vec
 	}
 
-	pub fn word_subsets(words1: Vec<String>, words2: Vec<String>) -> Vec<String> {
+	pub fn word_subsets(
+		words1: Vec<String>,
+		words2: Vec<String>,
+	) -> Vec<String> {
 		let word2_vec = words2
 			.into_iter()
 			.map(Solution::convert_string_to_vector)
@@ -112,8 +115,10 @@ mod tests {
 	#[test_case(vec!["apple","facebook"], vec!["plp","e"], vec!["apple"]
 )]
 	fn success_cases(s: Vec<&str>, t: Vec<&str>, expected: Vec<&str>) {
-		let words1: Vec<String> = s.iter().map(|s| s.to_string()).collect::<_>();
-		let words2: Vec<String> = t.iter().map(|s| s.to_string()).collect::<_>();
+		let words1: Vec<String> =
+			s.iter().map(|s| s.to_string()).collect::<_>();
+		let words2: Vec<String> =
+			t.iter().map(|s| s.to_string()).collect::<_>();
 		let expected: Vec<String> =
 			expected.iter().map(|s| s.to_string()).collect::<_>();
 
