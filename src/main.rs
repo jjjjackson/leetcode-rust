@@ -7,6 +7,7 @@ mod roman_to_int;
 mod unique_paths;
 mod valid_anagram;
 mod word_subsets;
+mod kth_smallest_element_in_a_sorted_matrix;
 
 fn main() {
 	println!("Hello, Leetcode!");
