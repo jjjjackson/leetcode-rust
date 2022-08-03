@@ -8,6 +8,7 @@ mod unique_paths;
 mod valid_anagram;
 mod word_subsets;
 mod kth_smallest_element_in_a_sorted_matrix;
+mod my_calendar_1;
 
 fn main() {
 	println!("Hello, Leetcode!");
