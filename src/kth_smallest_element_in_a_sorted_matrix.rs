@@ -1,27 +1,26 @@
 use crate::solution::Solution;
-use std::collections::BinaryHeap;
 use std::cmp::Reverse;
+use std::collections::BinaryHeap;
 
 // Question 0378
 impl Solution {
-    pub fn kth_smallest(matrix: Vec<Vec<i32>>, k: i32) -> i32 {
-        let mut heap: BinaryHeap<Reverse<i32>> = matrix
-            .into_iter()
-            .flat_map(|arr|  arr.into_iter().map(Reverse))
-            .collect();
-        
-        (1..k).for_each(|_|{ 
-            heap.pop();
-        });
-        
-        if let Some(Reverse(value)) = heap.pop() {
-            value
-        } else { 
-            0
-        }
-    }
-}
+	pub fn kth_smallest(matrix: Vec<Vec<i32>>, k: i32) -> i32 {
+		let mut heap: BinaryHeap<Reverse<i32>> = matrix
+			.into_iter()
+			.flat_map(|arr| arr.into_iter().map(Reverse))
+			.collect();
 
+		(1..k).for_each(|_| {
+			heap.pop();
+		});
+
+		if let Some(Reverse(value)) = heap.pop() {
+			value
+		} else {
+			0
+		}
+	}
+}
 
 #[cfg(test)]
 mod tests {
