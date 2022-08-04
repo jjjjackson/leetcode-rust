@@ -50,14 +50,14 @@ impl BinaryTree {
 					left.insert(node)
 				} else {
 					self.left = Some(node);
-                    true
+					true
 				}
 			} else {
 				if let Some(right) = &mut self.right {
 					right.insert(node)
 				} else {
 					self.right = Some(node);
-                    true
+					true
 				}
 			}
 		}
