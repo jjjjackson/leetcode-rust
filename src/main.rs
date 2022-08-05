@@ -1,6 +1,7 @@
 pub mod solution;
 
 mod binary_tree_inorder_traversal;
+mod combination_sum_iv;
 mod count_odd_number_in_an_interval_range;
 mod kth_largest_element_in_an_array;
 mod kth_smallest_element_in_a_sorted_matrix;
