@@ -8,7 +8,7 @@ impl Solution {
 		for i in 1..(target + 1) {
 			nums.iter().for_each(|n| {
 				if n <= &i {
-					dp[i as usize] = dp[i as usize] + dp[(i - n) as usize];
+					dp[i as usize] += dp[(i - n) as usize];
 				}
 			});
 		}

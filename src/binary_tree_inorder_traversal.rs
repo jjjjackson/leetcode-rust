@@ -29,7 +29,7 @@ impl Solution {
 			None => vec![],
 			Some(root) => {
 				Self::inorder(root.borrow().left.clone(), output);
-				output.push(root.borrow().val.clone());
+				output.push(root.borrow().val);
 				Self::inorder(root.borrow().right.clone(), output);
 				output.to_vec()
 			}

@@ -12,7 +12,7 @@ impl Solution {
 			heap.pop();
 		}
 
-		return heap.pop().unwrap();
+		heap.pop().unwrap()
 	}
 }
 

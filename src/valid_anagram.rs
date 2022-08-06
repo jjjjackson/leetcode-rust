@@ -12,7 +12,7 @@ impl Solution {
 			};
 			s_map.insert(c, c_count);
 		}
-		return s_map;
+		s_map
 	}
 	pub fn is_anagram(s: String, t: String) -> bool {
 		let s_map = Solution::convert_string_to_hashmap(s);
