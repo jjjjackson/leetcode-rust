@@ -7,6 +7,7 @@ mod kth_largest_element_in_an_array;
 mod kth_smallest_element_in_a_sorted_matrix;
 mod mirror_reflection;
 mod my_calendar_1;
+mod poor_pig;
 mod roman_to_int;
 mod unique_paths;
 mod valid_anagram;
