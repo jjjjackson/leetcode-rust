@@ -6,6 +6,7 @@ mod count_odd_number_in_an_interval_range;
 mod count_vowels_permutation;
 mod kth_largest_element_in_an_array;
 mod kth_smallest_element_in_a_sorted_matrix;
+mod longest_increasing_subsequence;
 mod mirror_reflection;
 mod my_calendar_1;
 mod poor_pig;
