@@ -1,6 +1,7 @@
 pub mod solution;
 
 mod binary_tree_inorder_traversal;
+mod binary_trees_with_factors;
 mod combination_sum_iv;
 mod count_odd_number_in_an_interval_range;
 mod count_vowels_permutation;
