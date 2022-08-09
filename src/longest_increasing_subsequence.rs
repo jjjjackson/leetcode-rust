@@ -24,8 +24,8 @@ mod tests {
 	use test_case::test_case;
 
 	#[test_case(vec![10,9,2,5,3,7,101,18], 4)]
-    #[test_case(vec![0,1,0,3,2,3], 4)]
-    #[test_case(vec![7,7,7,7,7,7,7], 1)]
+	#[test_case(vec![0,1,0,3,2,3], 4)]
+	#[test_case(vec![7,7,7,7,7,7,7], 1)]
 	fn test_success_case(nums: Vec<i32>, expected: i32) {
 		assert_eq!(super::Solution::length_of_lis(nums), expected);
 	}
