@@ -3,6 +3,7 @@ pub mod solution;
 mod binary_tree_inorder_traversal;
 mod binary_trees_with_factors;
 mod combination_sum_iv;
+mod convert_sorted_array_to_binary_search_tree;
 mod count_odd_number_in_an_interval_range;
 mod count_vowels_permutation;
 mod kth_largest_element_in_an_array;
