@@ -1,4 +1,4 @@
-use crate::solution::Solution;
+use crate::solutions::Solution;
 
 // 458. Poor Pigs
 // 如果沒有做過的話, 需要直接去看思路

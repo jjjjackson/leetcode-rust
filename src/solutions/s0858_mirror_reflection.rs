@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/mirror-reflection/
+use crate::solutions::Solution;
 
 // Time: O(log p)
 // Space: O(1)

@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/valid-anagram/
+use crate::solutions::Solution;
 use std::collections::HashMap;
 
 impl Solution {

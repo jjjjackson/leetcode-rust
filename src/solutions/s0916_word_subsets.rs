@@ -1,4 +1,4 @@
-use crate::solution::Solution;
+use crate::solutions::Solution;
 
 impl Solution {
 	pub fn convert_string_to_vector(s: String) -> Vec<u32> {

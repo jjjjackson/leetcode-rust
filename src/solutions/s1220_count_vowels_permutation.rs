@@ -1,4 +1,4 @@
-use crate::solution::Solution;
+use crate::solutions::Solution;
 use std::convert::TryInto;
 
 // 1220. Count Vowels Permutation

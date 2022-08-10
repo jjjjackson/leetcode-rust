@@ -1,4 +1,6 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+
+use crate::solutions::Solution;
 
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
@@ -24,7 +26,7 @@ impl Solution {
 	pub fn sorted_array_to_bst(
 		nums: Vec<i32>,
 	) -> Option<Rc<RefCell<TreeNode>>> {
-		if nums.len() <= 0 {
+		if nums.is_empty() {
 			None
 		} else {
 			let num_len: usize = nums.len();

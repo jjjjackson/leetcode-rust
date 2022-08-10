@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/longest-increasing-subsequence/
+use crate::solutions::Solution;
 use std::cmp::max;
 
 impl Solution {

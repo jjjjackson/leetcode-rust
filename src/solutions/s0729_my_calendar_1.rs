@@ -67,7 +67,6 @@ struct MyCalendar {
 	root: Option<Box<BinaryTree>>,
 }
 
-// 0729
 #[allow(dead_code)]
 impl MyCalendar {
 	fn new() -> Self {

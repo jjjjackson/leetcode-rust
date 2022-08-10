@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
+use crate::solutions::Solution;
 
 impl Solution {
 	pub fn count_odds(low: i32, high: i32) -> i32 {

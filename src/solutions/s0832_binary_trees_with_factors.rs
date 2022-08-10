@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/binary-trees-with-factors/
+use crate::solutions::Solution;
 
 // 823
 // binary-trees-with-factors

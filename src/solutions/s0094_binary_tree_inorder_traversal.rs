@@ -17,7 +17,7 @@ impl TreeNode {
 	}
 }
 
-use crate::solution::Solution;
+use crate::solutions::Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {

@@ -1,4 +1,5 @@
-use crate::solution::Solution;
+// https://leetcode.com/problems/unique-paths/
+use crate::solutions::Solution;
 
 impl Solution {
 	// paths(m,n)
