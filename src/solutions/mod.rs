@@ -5,6 +5,7 @@ mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
 mod s0108_convert_sorted_array_to_binary_search_tree;
 mod s0215_kth_largest_element_in_an_array;
+mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
 mod s0300_longest_increasing_subsequence;
 mod s0377_combination_sum_iv;
@@ -16,4 +17,5 @@ mod s0858_mirror_reflection;
 mod s0916_word_subsets;
 mod s1220_count_vowels_permutation;
 mod s1523_count_odd_numbers_in_an_interval_range;
+
 pub struct Solution {}
