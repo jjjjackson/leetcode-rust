@@ -44,8 +44,8 @@ mod tests {
 	use test_case::test_case;
 
 	#[test_case(tree![6,2,8,0,4,7,9,null,null,3,5], tree![2], tree![8], 6)]
-    #[test_case(tree![6,2,8,0,4,7,9,null,null,3,5], tree![2], tree![4], 2)]
-    #[test_case(tree![2,1], tree![2], tree![1   ], 2)]
+	#[test_case(tree![6,2,8,0,4,7,9,null,null,3,5], tree![2], tree![4], 2)]
+	#[test_case(tree![2,1], tree![2], tree![1   ], 2)]
 	fn success_cases(
 		node: Option<Rc<RefCell<TreeNode>>>,
 		p: Option<Rc<RefCell<TreeNode>>>,
