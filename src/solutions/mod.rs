@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 mod s0013_roman_to_int;
+mod s0030_substring_with_concatenation_of_all_words;
 mod s0062_unique_paths;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
