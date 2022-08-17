@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+mod s0001_tow_sum;
 mod s0013_roman_to_int;
 mod s0030_substring_with_concatenation_of_all_words;
 mod s0062_unique_paths;
