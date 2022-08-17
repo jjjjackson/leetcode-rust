@@ -1,7 +1,8 @@
 // https://leetcode.com/problems/unique-morse-code-words/
 use crate::solutions::Solution;
 
-use std::collections::HashMap;
+// faster than 100.00%
+use std::collections::HashSet;
 impl Solution {
 	pub fn unique_morse_representations(words: Vec<String>) -> i32 {
 		let morse_codes: Vec<&str> = vec![
@@ -10,19 +11,16 @@ impl Solution {
 			"...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..",
 		];
 		let a_byte = "a".to_string().as_bytes()[0];
-		let mut exist_morse: HashMap<String, i32> = HashMap::new();
+		let mut exist_morse: HashSet<String> = HashSet::new();
 
-		for w in words {
+		words.iter().for_each(|w| {
 			let morse_string = w
 				.as_bytes()
 				.iter()
 				.map(|w| morse_codes[(w - a_byte) as usize])
 				.collect::<String>();
-			exist_morse.insert(
-				morse_string.clone(),
-				exist_morse.get(&morse_string).unwrap_or_else(|| &0) + 1,
-			);
-		}
+			exist_morse.insert(morse_string);
+		});
 
 		exist_morse.len() as i32
 	}
