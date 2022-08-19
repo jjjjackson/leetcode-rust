@@ -14,6 +14,7 @@ mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
 mod s0387_first_unique_character_in_a_string;
 mod s0458_poor_pig;
+mod s0659_split_array_into_consecutive_subsequences;
 mod s0729_my_calendar_1;
 mod s0804_unique_morse_code_words;
 mod s0832_binary_trees_with_factors;
