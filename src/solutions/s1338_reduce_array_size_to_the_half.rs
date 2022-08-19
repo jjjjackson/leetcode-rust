@@ -6,9 +6,9 @@ use std::collections::{BinaryHeap, HashMap};
 impl Solution {
 	pub fn min_set_size(arr: Vec<i32>) -> i32 {
 		let mut map: HashMap<i32, usize> = HashMap::new();
-        for v in arr.clone() {
-            *map.entry(v).or_default() +=1;
-        }
+		for v in arr.clone() {
+			*map.entry(v).or_default() += 1;
+		}
 
 		let mut heap: BinaryHeap<_> = map.values().collect();
 		let mut result = 0;
