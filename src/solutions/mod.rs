@@ -24,5 +24,6 @@ mod s0916_word_subsets;
 mod s1220_count_vowels_permutation;
 mod s1338_reduce_array_size_to_the_half;
 mod s1523_count_odd_numbers_in_an_interval_range;
+mod s0936_stamping_the_sequence;
 
 pub struct Solution {}
