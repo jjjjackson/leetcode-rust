@@ -10,6 +10,7 @@ mod s0215_kth_largest_element_in_an_array;
 mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
 mod s0300_longest_increasing_subsequence;
+mod s0342_power_of_four;
 mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
 mod s0387_first_unique_character_in_a_string;
