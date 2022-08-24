@@ -11,6 +11,7 @@ mod s0234_palindrome_linked_list;
 mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
 mod s0300_longest_increasing_subsequence;
+mod s0326_power_of_three;
 mod s0342_power_of_four;
 mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
@@ -27,5 +28,4 @@ mod s0936_stamping_the_sequence;
 mod s1220_count_vowels_permutation;
 mod s1338_reduce_array_size_to_the_half;
 mod s1523_count_odd_numbers_in_an_interval_range;
-
 pub struct Solution {}
