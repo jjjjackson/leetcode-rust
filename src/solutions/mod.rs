@@ -15,6 +15,7 @@ mod s0326_power_of_three;
 mod s0342_power_of_four;
 mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
+mod s0383_ransom_note;
 mod s0387_first_unique_character_in_a_string;
 mod s0458_poor_pig;
 mod s0659_split_array_into_consecutive_subsequences;
