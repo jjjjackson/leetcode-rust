@@ -23,10 +23,12 @@ mod s0729_my_calendar_1;
 mod s0804_unique_morse_code_words;
 mod s0832_binary_trees_with_factors;
 mod s0858_mirror_reflection;
+mod s0869_reordered_power_of_2;
 mod s0871_minimum_number_of_refueling_stops;
 mod s0916_word_subsets;
 mod s0936_stamping_the_sequence;
 mod s1220_count_vowels_permutation;
 mod s1338_reduce_array_size_to_the_half;
 mod s1523_count_odd_numbers_in_an_interval_range;
+
 pub struct Solution {}
