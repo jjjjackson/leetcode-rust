@@ -13,6 +13,7 @@ mod s0242_valid_anagram;
 mod s0300_longest_increasing_subsequence;
 mod s0326_power_of_three;
 mod s0342_power_of_four;
+mod s0363_max_sum_of_rectangle_no_larger_than_k;
 mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
 mod s0383_ransom_note;
