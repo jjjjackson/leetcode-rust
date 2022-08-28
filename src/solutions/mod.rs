@@ -29,6 +29,7 @@ mod s0871_minimum_number_of_refueling_stops;
 mod s0916_word_subsets;
 mod s0936_stamping_the_sequence;
 mod s1220_count_vowels_permutation;
+mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
 mod s1523_count_odd_numbers_in_an_interval_range;
 
