@@ -2,6 +2,7 @@
 mod s0001_tow_sum;
 mod s0013_roman_to_int;
 mod s0030_substring_with_concatenation_of_all_words;
+mod s0048_rotate_image;
 mod s0062_unique_paths;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
