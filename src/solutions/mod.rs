@@ -21,6 +21,7 @@ mod s0383_ransom_note;
 mod s0387_first_unique_character_in_a_string;
 mod s0417_pacific_atlantic_water_flow;
 mod s0458_poor_pig;
+mod s0637_average_of_levels_in_binary_tree;
 mod s0659_split_array_into_consecutive_subsequences;
 mod s0729_my_calendar_1;
 mod s0804_unique_morse_code_words;
@@ -34,5 +35,4 @@ mod s1220_count_vowels_permutation;
 mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
 mod s1523_count_odd_numbers_in_an_interval_range;
-
 pub struct Solution {}
