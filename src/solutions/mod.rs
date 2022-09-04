@@ -32,6 +32,7 @@ mod s0871_minimum_number_of_refueling_stops;
 mod s0916_word_subsets;
 mod s0936_stamping_the_sequence;
 mod s0967_numbers_with_same_consecutive_differences;
+mod s0987_vertical_order_traversal_of_a_binary_tree;
 mod s1220_count_vowels_permutation;
 mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
