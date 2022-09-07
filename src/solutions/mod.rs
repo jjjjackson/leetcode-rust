@@ -21,6 +21,7 @@ mod s0383_ransom_note;
 mod s0387_first_unique_character_in_a_string;
 mod s0417_pacific_atlantic_water_flow;
 mod s0458_poor_pig;
+mod s0606_construct_string_from_binary_tree;
 mod s0637_average_of_levels_in_binary_tree;
 mod s0659_split_array_into_consecutive_subsequences;
 mod s0729_my_calendar_1;
