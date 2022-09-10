@@ -7,6 +7,7 @@ mod s0062_unique_paths;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
 mod s0108_convert_sorted_array_to_binary_search_tree;
+mod s0188_best_time_to_buy_and_sell_stock_ivbest_time_to_buy_and_sell_stock_iv;
 mod s0215_kth_largest_element_in_an_array;
 mod s0234_palindrome_linked_list;
 mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
