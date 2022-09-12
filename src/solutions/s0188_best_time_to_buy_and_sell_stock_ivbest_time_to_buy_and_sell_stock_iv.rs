@@ -12,9 +12,7 @@ impl Solution {
 		let mut dp = vec![vec![0; prices.len()]; (k + 1) as usize];
 		for i in 0..dp.len() {
 			for j in 0..dp[i].len() {
-				if i == 0 {
-					dp[i][j] = 0;
-				} else if j == 0 {
+				if i == 0 || j == 0 {
 					dp[i][j] = 0;
 				} else {
 					let mut max = i32::MIN;
