@@ -20,6 +20,7 @@ mod s0377_combination_sum_iv;
 mod s0378_kth_smallest_element_in_a_sorted_matrix;
 mod s0383_ransom_note;
 mod s0387_first_unique_character_in_a_string;
+mod s0393_utf_8_validation;
 mod s0417_pacific_atlantic_water_flow;
 mod s0458_poor_pig;
 mod s0606_construct_string_from_binary_tree;
