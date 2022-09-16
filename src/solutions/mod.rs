@@ -43,5 +43,7 @@ mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
 mod s1457_pseudo_palindromic_paths_in_a_binary_tree;
 mod s1523_count_odd_numbers_in_an_interval_range;
+mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
+mod s2007_find_original_array_from_doubled_array;
 pub struct Solution {}
