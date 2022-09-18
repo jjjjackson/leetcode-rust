@@ -2,6 +2,7 @@
 mod s0001_tow_sum;
 mod s0013_roman_to_int;
 mod s0030_substring_with_concatenation_of_all_words;
+mod s0042_trapping_rain_water;
 mod s0048_rotate_image;
 mod s0062_unique_paths;
 mod s0094_binary_tree_inorder_traversal;
@@ -14,6 +15,7 @@ mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
 mod s0300_longest_increasing_subsequence;
 mod s0326_power_of_three;
+mod s0336_palindrome_pairs;
 mod s0342_power_of_four;
 mod s0363_max_sum_of_rectangle_no_larger_than_k;
 mod s0377_combination_sum_iv;
