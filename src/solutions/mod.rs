@@ -41,6 +41,7 @@ mod s0916_word_subsets;
 mod s0936_stamping_the_sequence;
 mod s0948_bag_of_tokens;
 mod s0967_numbers_with_same_consecutive_differences;
+mod s0985_sum_of_even_numbers_after_queries;
 mod s0987_vertical_order_traversal_of_a_binary_tree;
 mod s1220_count_vowels_permutation;
 mod s1329_sort_the_matrix_diagonally;
