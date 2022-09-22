@@ -12,7 +12,7 @@ impl Solution {
 				if height[left] >= left_max {
 					left_max = height[left];
 				} else {
-					result += (left_max - height[left]);
+					result += left_max - height[left];
 				}
 				left += 1;
 			} else {

@@ -24,12 +24,12 @@ impl Solution {
 			}
 		}
 
-		for r in 0..rows {
+		for (r, row) in result.iter_mut().enumerate().take(rows) {
 			for c in 0..cols {
 				let key = r as i32 - c as i32;
 				let queue = mat_map.get_mut(&key).unwrap();
 				if let Some(Reverse(value)) = queue.pop() {
-					result[r][c] = value;
+					row[c] = value;
 				}
 			}
 		}
