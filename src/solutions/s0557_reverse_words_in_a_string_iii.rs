@@ -12,7 +12,6 @@ impl Solution {
 		};
 
 		s.split(" ")
-			.into_iter()
 			.map(reverse_word)
 			.collect::<Vec<String>>()
 			.join(" ")
