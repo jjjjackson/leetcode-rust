@@ -27,12 +27,10 @@ impl Solution {
 				for (n_r, n_c) in Self::neighbors(cur_r, cur_c) {
 					if n_r < 0 || n_c < 0 {
 						if_reach_p = true;
-					} else if n_r >= m.len() as i32 || n_c >= m[0].len() as i32
-					{
+					} else if n_r >= m.len() as i32 || n_c >= m[0].len() as i32 {
 						if_reach_a = true;
 					} else if !visited.contains(&(n_r, n_c))
-						&& m[n_r as usize][n_c as usize]
-							<= m[cur_r as usize][cur_c as usize]
+						&& m[n_r as usize][n_c as usize] <= m[cur_r as usize][cur_c as usize]
 					{
 						queue.push_back((n_r, n_c));
 					}

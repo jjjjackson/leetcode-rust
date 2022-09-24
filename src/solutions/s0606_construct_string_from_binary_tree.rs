@@ -12,21 +12,13 @@ impl Solution {
 				let mut result = root.val.to_string();
 
 				if root.left.is_some() {
-					result = format!(
-						"{}({})",
-						result,
-						Self::tree2str(root.left.take())
-					);
+					result = format!("{}({})", result, Self::tree2str(root.left.take()));
 				} else if root.right.is_some() {
 					result = format!("{}()", result);
 				}
 
 				if root.right.is_some() {
-					result = format!(
-						"{}({})",
-						result,
-						Self::tree2str(root.right.take())
-					);
+					result = format!("{}({})", result, Self::tree2str(root.right.take()));
 				}
 
 				result

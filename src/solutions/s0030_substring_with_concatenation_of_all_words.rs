@@ -29,13 +29,11 @@ impl Solution {
 			let mut j = i;
 			while j < (s.len() - word_len + 1) {
 				match words.iter().find(|w| {
-					j + word_len <= s.len()
-						&& s.as_bytes()[j..j + word_len] == *(w.as_bytes())
+					j + word_len <= s.len() && s.as_bytes()[j..j + word_len] == *(w.as_bytes())
 				}) {
 					None => break,
 					Some(word) => {
-						let count =
-							words_map.get(word).unwrap_or_else(|| &0) + 1;
+						let count = words_map.get(word).unwrap_or_else(|| &0) + 1;
 						words_map.insert(word, count);
 
 						if j + word_len >= i + total_word_len {

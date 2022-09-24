@@ -16,10 +16,8 @@ impl Solution {
 		let mut result: Vec<Vec<i32>> = vec![];
 		for a in 0..words.len() {
 			for b in 0..words.len() {
-				if a != b
-					&& Self::is_palindrome_pairs(
-						format!("{}{}", words[a], words[b]).as_str(),
-					) {
+				if a != b && Self::is_palindrome_pairs(format!("{}{}", words[a], words[b]).as_str())
+				{
 					result.push(vec![a as i32, b as i32]);
 				}
 			}

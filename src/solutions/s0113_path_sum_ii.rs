@@ -7,22 +7,14 @@ use std::rc::Rc;
 
 // 100 %
 impl Solution {
-	pub fn path_sum(
-		root: Option<Rc<RefCell<TreeNode>>>,
-		target_sum: i32,
-	) -> Vec<Vec<i32>> {
+	pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> Vec<Vec<i32>> {
 		root.map(|root| {
 			let mut root = root.borrow_mut();
-			if target_sum - root.val == 0
-				&& root.left.is_none()
-				&& root.right.is_none()
-			{
+			if target_sum - root.val == 0 && root.left.is_none() && root.right.is_none() {
 				vec![vec![root.val]]
 			} else {
-				let mut left =
-					Self::path_sum(root.left.take(), target_sum - root.val);
-				let mut right =
-					Self::path_sum(root.right.take(), target_sum - root.val);
+				let mut left = Self::path_sum(root.left.take(), target_sum - root.val);
+				let mut right = Self::path_sum(root.right.take(), target_sum - root.val);
 
 				left.append(&mut right);
 				left.into_iter()

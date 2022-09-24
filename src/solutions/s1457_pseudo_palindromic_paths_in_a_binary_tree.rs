@@ -4,9 +4,7 @@ use crate::solutions::Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-	pub fn pseudo_palindromic_paths(
-		root: Option<Rc<RefCell<TreeNode>>>,
-	) -> i32 {
+	pub fn pseudo_palindromic_paths(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
 		let mut count = 0;
 		if let Some(root) = root.as_ref() {
 			Self::pseudo_palindromic_paths_dfs(root, [0; 10], &mut count);

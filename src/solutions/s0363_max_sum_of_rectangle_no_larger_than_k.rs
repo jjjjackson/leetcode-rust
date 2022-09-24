@@ -40,9 +40,6 @@ mod tests {
 
 	#[test_case(vec![vec![1,0,1],vec![0,-2,3]], 2, 2)]
 	fn success(matrix: Vec<Vec<i32>>, target: i32, expected: i32) {
-		assert_eq!(
-			super::Solution::max_sum_submatrix(matrix, target),
-			expected
-		);
+		assert_eq!(super::Solution::max_sum_submatrix(matrix, target), expected);
 	}
 }

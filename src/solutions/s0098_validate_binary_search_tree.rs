@@ -8,11 +8,7 @@ impl Solution {
 		Self::helper(root, std::i64::MIN, std::i64::MAX)
 	}
 
-	pub fn helper(
-		root: Option<Rc<RefCell<TreeNode>>>,
-		min: i64,
-		max: i64,
-	) -> bool {
+	pub fn helper(root: Option<Rc<RefCell<TreeNode>>>, min: i64, max: i64) -> bool {
 		match root {
 			None => true,
 			Some(root) => {

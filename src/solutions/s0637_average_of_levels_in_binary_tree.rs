@@ -12,8 +12,7 @@ impl Solution {
 			None => vec![],
 			Some(root) => {
 				let mut result: Vec<f64> = Vec::new();
-				let mut queue: VecDeque<Rc<RefCell<TreeNode>>> =
-					VecDeque::new();
+				let mut queue: VecDeque<Rc<RefCell<TreeNode>>> = VecDeque::new();
 				queue.push_back(root);
 
 				while !queue.is_empty() {

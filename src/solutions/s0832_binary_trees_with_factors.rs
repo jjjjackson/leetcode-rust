@@ -20,8 +20,7 @@ impl Solution {
 					dp.insert(
 						cur_num,
 						dp.get(&cur_num).unwrap_or(&0)
-							+ dp.get(&factor).unwrap_or(&0)
-								* dp.get(&quotient).unwrap_or(&0),
+							+ dp.get(&factor).unwrap_or(&0) * dp.get(&quotient).unwrap_or(&0),
 					);
 				}
 			}

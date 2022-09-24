@@ -28,9 +28,7 @@ use std::rc::Rc;
 // BFS
 // DFS 好想很多，解法也沒有這麼困難，可以下次再試試看
 impl Solution {
-	pub fn vertical_traversal(
-		root: Option<Rc<RefCell<TreeNode>>>,
-	) -> Vec<Vec<i32>> {
+	pub fn vertical_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
 		let mut result_map = BTreeMap::new(); // BTreeMap<col<rol, value>>
 		let mut queue: VecDeque<(Rc<RefCell<TreeNode>>, i32)> = VecDeque::new();
 		if let Some(root) = root {

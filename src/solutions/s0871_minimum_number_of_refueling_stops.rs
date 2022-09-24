@@ -5,11 +5,7 @@ use crate::solutions::Solution;
 
 use std::collections::BinaryHeap;
 impl Solution {
-	pub fn min_refuel_stops(
-		target: i32,
-		start_fuel: i32,
-		stations: Vec<Vec<i32>>,
-	) -> i32 {
+	pub fn min_refuel_stops(target: i32, start_fuel: i32, stations: Vec<Vec<i32>>) -> i32 {
 		if start_fuel >= target {
 			return 0;
 		}
@@ -46,12 +42,7 @@ mod tests {
 	#[test_case(100, 50, vec![vec![25,30]], -1)]
 	#[test_case(100, 10, vec![vec![10,60], vec![20,30], vec![30,30],vec![60,40]], 2)]
 	#[test_case(1000, 299, vec![vec![13,21],vec![26,115],vec![100,47],vec![225,99],vec![299,141],vec![444,198],vec![608,190],vec![636,157],vec![647,255],vec![841,123]], 4)]
-	fn success(
-		target: i32,
-		start_fuel: i32,
-		stations: Vec<Vec<i32>>,
-		expected: i32,
-	) {
+	fn success(target: i32, start_fuel: i32, stations: Vec<Vec<i32>>, expected: i32) {
 		assert_eq!(
 			super::Solution::min_refuel_stops(target, start_fuel, stations),
 			expected

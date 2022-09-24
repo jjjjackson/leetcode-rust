@@ -33,10 +33,7 @@ mod tests {
 	#[test_case("aa", "aab", true)]
 	fn success_case(ransom_note: &str, magazine: &str, expected: bool) {
 		assert_eq!(
-			super::Solution::can_construct(
-				ransom_note.to_string(),
-				magazine.to_string()
-			),
+			super::Solution::can_construct(ransom_note.to_string(), magazine.to_string()),
 			expected
 		);
 	}

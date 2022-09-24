@@ -18,8 +18,7 @@ impl Solution {
 		for i in 1..n {
 			dp[i][0] = dp[i - 1][1] % m; // f(i-1)(e)
 			dp[i][1] = (dp[i - 1][0] + dp[i - 1][2]) % m; // f(i-1)(a) + f(i-1)(i)
-			dp[i][2] =
-				(dp[i - 1][0] + dp[i - 1][1] + dp[i - 1][3] + dp[i - 1][4]) % m; // f(i-1)(a) + f(i-1)(e) + f(i-1)(o) + f(i-1)(u)
+			dp[i][2] = (dp[i - 1][0] + dp[i - 1][1] + dp[i - 1][3] + dp[i - 1][4]) % m; // f(i-1)(a) + f(i-1)(e) + f(i-1)(o) + f(i-1)(u)
 			dp[i][3] = (dp[i - 1][2] + dp[i - 1][4]) % m; // f(i-1)(i) + f(i-1)(u)
 			dp[i][4] = dp[i - 1][0] % m; // f(i-1)(a)
 		}

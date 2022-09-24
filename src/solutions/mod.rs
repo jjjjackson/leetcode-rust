@@ -28,7 +28,6 @@ mod s0417_pacific_atlantic_water_flow;
 mod s0458_poor_pig;
 mod s0557_reverse_words_in_a_string_iii;
 mod s0606_construct_string_from_binary_tree;
-mod s0609_find_duplicate_file_in_system;
 mod s0637_average_of_levels_in_binary_tree;
 mod s0659_split_array_into_consecutive_subsequences;
 mod s0718_maximum_length_of_repeated_subarray;
@@ -53,5 +52,4 @@ mod s1523_count_odd_numbers_in_an_interval_range;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
-mod s2007_find_original_array_from_doubled_array;
 pub struct Solution {}

@@ -15,17 +15,9 @@ impl Solution {
 			let p_val = p.borrow().val;
 			let q_val = q.borrow().val;
 			if root_val > p_val && root_val > q_val {
-				Self::lowest_common_ancestor(
-					root.borrow().left.clone(),
-					Some(p),
-					Some(q),
-				)
+				Self::lowest_common_ancestor(root.borrow().left.clone(), Some(p), Some(q))
 			} else if root_val < p_val && root_val < q_val {
-				Self::lowest_common_ancestor(
-					root.borrow().right.clone(),
-					Some(p),
-					Some(q),
-				)
+				Self::lowest_common_ancestor(root.borrow().right.clone(), Some(p), Some(q))
 			} else {
 				Some(root.clone())
 			}

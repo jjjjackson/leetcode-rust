@@ -3,11 +3,7 @@ use crate::solutions::Solution;
 // 458. Poor Pigs
 // 如果沒有做過的話, 需要直接去看思路
 impl Solution {
-	pub fn poor_pigs(
-		buckets: i32,
-		minutes_to_die: i32,
-		minutes_to_test: i32,
-	) -> i32 {
+	pub fn poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32) -> i32 {
 		let frame = (minutes_to_test / minutes_to_die) as i32 + 1;
 
 		let mut i = 0;
@@ -29,12 +25,7 @@ mod tests {
 	#[test_case(4, 15, 30, 2)]
 	#[test_case(1, 1, 1, 0)]
 	#[test_case(2, 1, 1, 1)]
-	fn test_poor_pigs(
-		buckets: i32,
-		minutes_to_die: i32,
-		minutes_to_test: i32,
-		expected: i32,
-	) {
+	fn test_poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32, expected: i32) {
 		assert_eq!(
 			Solution::poor_pigs(buckets, minutes_to_die, minutes_to_test),
 			expected

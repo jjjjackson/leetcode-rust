@@ -41,10 +41,7 @@ mod tests {
 	#[test_case("abc", "ababc", vec![0,2])]
 	#[test_case("abca", "aabcaca", vec![3,0,1])]
 	fn success(stamp: &'static str, target: &'static str, expected: Vec<i32>) {
-		let result = super::Solution::moves_to_stamp(
-			stamp.to_string(),
-			target.to_string(),
-		);
+		let result = super::Solution::moves_to_stamp(stamp.to_string(), target.to_string());
 		assert!(result.iter().all(|x| expected.contains(&x)));
 	}
 }

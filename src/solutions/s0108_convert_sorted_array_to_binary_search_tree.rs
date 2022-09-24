@@ -23,9 +23,7 @@ impl TreeNode {
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-	pub fn sorted_array_to_bst(
-		nums: Vec<i32>,
-	) -> Option<Rc<RefCell<TreeNode>>> {
+	pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
 		if nums.is_empty() {
 			None
 		} else {
@@ -34,9 +32,7 @@ impl Solution {
 			Some(Rc::new(RefCell::new(TreeNode {
 				val: nums[num_len / 2],
 				left: Self::sorted_array_to_bst(nums[0..half_num_len].to_vec()),
-				right: Self::sorted_array_to_bst(
-					nums[(half_num_len + 1)..num_len].to_vec(),
-				),
+				right: Self::sorted_array_to_bst(nums[(half_num_len + 1)..num_len].to_vec()),
 			})))
 		}
 	}
