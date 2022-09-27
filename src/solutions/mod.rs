@@ -36,6 +36,7 @@ mod s0729_my_calendar_1;
 mod s0804_unique_morse_code_words;
 mod s0814_binary_tree_pruning;
 mod s0832_binary_trees_with_factors;
+mod s0838_push_dominoes;
 mod s0858_mirror_reflection;
 mod s0869_reordered_power_of_2;
 mod s0871_minimum_number_of_refueling_stops;
