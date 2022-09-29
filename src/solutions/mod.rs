@@ -31,6 +31,7 @@ mod s0557_reverse_words_in_a_string_iii;
 mod s0606_construct_string_from_binary_tree;
 mod s0622_design_circular_queue;
 mod s0637_average_of_levels_in_binary_tree;
+mod s0658_find_k_closest_elements;
 mod s0659_split_array_into_consecutive_subsequences;
 mod s0718_maximum_length_of_repeated_subarray;
 mod s0729_my_calendar_1;
