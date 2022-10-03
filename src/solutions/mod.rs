@@ -56,6 +56,7 @@ mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
 mod s1457_pseudo_palindromic_paths_in_a_binary_tree;
 mod s1523_count_odd_numbers_in_an_interval_range;
+mod s1578_minimum_time_to_make_rope_colorful;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
