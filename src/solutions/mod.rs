@@ -10,6 +10,7 @@ mod s0091_decode_ways;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
 mod s0108_convert_sorted_array_to_binary_search_tree;
+mod s0112_path_sum;
 mod s0113_path_sum_ii;
 mod s0128_the_skyline_problem;
 mod s0188_best_time_to_buy_and_sell_stock_ivbest_time_to_buy_and_sell_stock_iv;
@@ -60,4 +61,5 @@ mod s1578_minimum_time_to_make_rope_colorful;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
+
 pub struct Solution {}
