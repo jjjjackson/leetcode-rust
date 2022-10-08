@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 mod s0001_tow_sum;
 mod s0013_roman_to_int;
+mod s0016_3sum_closest;
 mod s0019_remove_nth_node_from_end_of_list;
 mod s0030_substring_with_concatenation_of_all_words;
 mod s0042_trapping_rain_water;
