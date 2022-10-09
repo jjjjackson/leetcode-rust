@@ -36,6 +36,7 @@ mod s0606_construct_string_from_binary_tree;
 mod s0622_design_circular_queue;
 mod s0623_add_one_row_to_tree;
 mod s0637_average_of_levels_in_binary_tree;
+mod s0653_two_sum_iv_input_is_a_bst;
 mod s0658_find_k_closest_elements;
 mod s0659_split_array_into_consecutive_subsequences;
 mod s0718_maximum_length_of_repeated_subarray;
@@ -64,5 +65,4 @@ mod s1578_minimum_time_to_make_rope_colorful;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
-
 pub struct Solution {}
