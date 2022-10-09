@@ -1,4 +1,6 @@
 #![allow(dead_code)]
+pub struct Solution {}
+
 mod s0001_tow_sum;
 mod s0013_roman_to_int;
 mod s0016_3sum_closest;
@@ -65,4 +67,3 @@ mod s1578_minimum_time_to_make_rope_colorful;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1996_the_number_of_weak_characters_in_the_game;
-pub struct Solution {}

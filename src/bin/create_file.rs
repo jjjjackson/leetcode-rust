@@ -2,12 +2,12 @@ extern crate serde;
 extern crate serde_derive;
 use futures::TryFutureExt;
 use jsonpath::Selector;
-use log::{debug, error, info};
+use log::{debug, error, info, warn};
 use reqwest::Url;
 use serde_json::{json, Value};
 use std::collections::HashMap;
 use std::env;
-use std::fs::File;
+use std::fs::{File, OpenOptions};
 use std::io::prelude::*;
 use std::path::PathBuf;
 use structopt::StructOpt;
@@ -23,6 +23,8 @@ enum Error {
 	ParseDataFailed,
 	ConvertTypeFailed,
 	QuestionIdNotFound,
+	OpenFileFailed,
+	AppendCodeFailed,
 }
 
 #[derive(StructOpt)]
@@ -141,7 +143,7 @@ async fn main() -> Result<(), Error> {
 	let question_name = opt.url.path().replace("/problems/", "").replace("/", "");
 	info!("question name: {question_name}");
 
-	info!("get from leetcode...");
+	info!("getting from leetcode...");
 	let value = get_data_from_leetcode(&question_name).await?;
 	debug!("value: {:?}", value);
 
@@ -152,13 +154,29 @@ async fn main() -> Result<(), Error> {
 	let format_question_name = question_name.replace('-', "_");
 	debug!("formatted question: {code}");
 
-	info!("create file...");
 	let current_dir = env::current_dir().unwrap();
-	let file_name = format!("s{:0>4}_{}.rs", question_id, format_question_name);
-	let file_path = PathBuf::from(current_dir).join(format!("src/solutions/{file_name}"));
-	let mut file = File::create(file_path).map_err(|_| Error::CreateFileFailed)?;
-	file.write_all(code.as_bytes())
-		.or(Err(Error::CreateFileFailed))?;
+	let file_name = format!("s{:0>4}_{}", question_id, format_question_name);
+	let file_path =
+		PathBuf::from(current_dir.clone()).join(format!("src/solutions/{file_name}.rs"));
+
+	if file_path.exists() {
+		warn!("file exists");
+	} else {
+		info!("creating file {file_name}...");
+		let mut file = File::create(file_path).map_err(|_| Error::CreateFileFailed)?;
+		file.write_all(code.as_bytes())
+			.or(Err(Error::CreateFileFailed))?;
+
+		let mod_file_path = PathBuf::from(current_dir).join(format!("src/solutions/mod.rs"));
+		let mut mod_file = OpenOptions::new()
+			.write(true)
+			.append(true)
+			.open(mod_file_path)
+			.map_err(|_| Error::OpenFileFailed)?;
+		mod_file
+			.write_all(format!("mod {};", file_name).as_bytes())
+			.or(Err(Error::AppendCodeFailed))?;
+	}
 
 	info!("Done");
 	Ok(())
