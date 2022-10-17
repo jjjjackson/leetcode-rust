@@ -67,4 +67,5 @@ mod s1523_count_odd_numbers_in_an_interval_range;
 mod s1578_minimum_time_to_make_rope_colorful;
 mod s1680_concatenation_of_consecutive_binary_numbers;
 mod s1770_maximum_score_from_performing_multiplication_operations;
+mod s1832_check_if_the_sentence_is_pangram;
 mod s1996_the_number_of_weak_characters_in_the_game;
