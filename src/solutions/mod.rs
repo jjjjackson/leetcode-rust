@@ -9,6 +9,7 @@ mod s0030_substring_with_concatenation_of_all_words;
 mod s0042_trapping_rain_water;
 mod s0048_rotate_image;
 mod s0062_unique_paths;
+mod s0076_minimum_window_substring;
 mod s0091_decode_ways;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
