@@ -59,6 +59,7 @@ mod s0967_numbers_with_same_consecutive_differences;
 mod s0981_time_based_key_value_store;
 mod s0985_sum_of_even_numbers_after_queries;
 mod s0987_vertical_order_traversal_of_a_binary_tree;
+mod s1047_remove_all_adjacent_duplicates_in_string;
 mod s1155_number_of_dice_rolls_with_target_sum;
 mod s1220_count_vowels_permutation;
 mod s1328_break_a_palindrome;
