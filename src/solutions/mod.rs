@@ -62,6 +62,7 @@ mod s0987_vertical_order_traversal_of_a_binary_tree;
 mod s1047_remove_all_adjacent_duplicates_in_string;
 mod s1155_number_of_dice_rolls_with_target_sum;
 mod s1220_count_vowels_permutation;
+mod s1323_maximum_69_number;
 mod s1328_break_a_palindrome;
 mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
