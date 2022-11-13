@@ -18,6 +18,7 @@ mod s0108_convert_sorted_array_to_binary_search_tree;
 mod s0112_path_sum;
 mod s0113_path_sum_ii;
 mod s0128_the_skyline_problem;
+mod s0151_reverse_words_in_a_string;
 mod s0188_best_time_to_buy_and_sell_stock_ivbest_time_to_buy_and_sell_stock_iv;
 mod s0215_kth_largest_element_in_an_array;
 mod s0234_palindrome_linked_list;
