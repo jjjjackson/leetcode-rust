@@ -25,6 +25,7 @@ mod s0222_count_complete_tree_nodes;
 mod s0234_palindrome_linked_list;
 mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
+mod s0263_ugly_number;
 mod s0300_longest_increasing_subsequence;
 mod s0326_power_of_three;
 mod s0336_palindrome_pairs;
