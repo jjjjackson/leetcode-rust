@@ -22,6 +22,7 @@ mod s0151_reverse_words_in_a_string;
 mod s0188_best_time_to_buy_and_sell_stock_ivbest_time_to_buy_and_sell_stock_iv;
 mod s0215_kth_largest_element_in_an_array;
 mod s0222_count_complete_tree_nodes;
+mod s0224_basic_calculator;
 mod s0234_palindrome_linked_list;
 mod s0235_lowest_common_ancestor_of_a_binary_search_tree;
 mod s0242_valid_anagram;
