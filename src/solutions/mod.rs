@@ -57,6 +57,7 @@ mod s0838_push_dominoes;
 mod s0858_mirror_reflection;
 mod s0869_reordered_power_of_2;
 mod s0871_minimum_number_of_refueling_stops;
+mod s0907_sum_of_subarray_minimums;
 mod s0916_word_subsets;
 mod s0936_stamping_the_sequence;
 mod s0948_bag_of_tokens;
