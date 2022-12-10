@@ -12,7 +12,7 @@ impl TimeMap {
 	}
 
 	fn set(&mut self, key: String, value: String, timestamp: i32) {
-		let mut entry = self.store.entry(key).or_insert(Vec::new());
+		let entry = self.store.entry(key).or_insert(Vec::new());
 		entry.push((timestamp, value));
 	}
 
