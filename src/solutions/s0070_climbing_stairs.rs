@@ -23,9 +23,9 @@ mod tests {
 	use test_case::test_case;
 
 	#[test_case(0, 1)]
-    #[test_case(2, 2)]
-    #[test_case(3, 3)]
-    #[test_case(4, 5)] 
+	#[test_case(2, 2)]
+	#[test_case(3, 3)]
+	#[test_case(4, 5)]
 	fn cases(n: i32, expected: i32) {
 		assert_eq!(super::Solution::climb_stairs(n), expected);
 	}
