@@ -85,3 +85,4 @@ mod s1770_maximum_score_from_performing_multiplication_operations;
 mod s1832_check_if_the_sentence_is_pangram;
 mod s1971_find_if_path_exists_in_graph;
 mod s1996_the_number_of_weak_characters_in_the_game;
+mod s2244_minimum_rounds_to_complete_all_tasks;
