@@ -117,7 +117,7 @@ fn get_question_id(json_str: &Value) -> Result<u16, Error> {
 
 fn mix_code_with_template(code: &str) -> String {
 	format!(
-		r#"use crate::solutions::Solution;
+		r#"struct Solution {{}}
 
 
 {code}
