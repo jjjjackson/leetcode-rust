@@ -42,6 +42,7 @@ mod s0383_ransom_note;
 mod s0387_first_unique_character_in_a_string;
 mod s0393_utf_8_validation;
 mod s0417_pacific_atlantic_water_flow;
+mod s0452_minimum_number_of_arrows_to_burst_balloons;
 mod s0458_poor_pig;
 mod s0557_reverse_words_in_a_string_iii;
 mod s0606_construct_string_from_binary_tree;
