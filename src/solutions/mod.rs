@@ -15,6 +15,7 @@ mod s0076_minimum_window_substring;
 mod s0091_decode_ways;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
+mod s0100_same_tree;
 mod s0108_convert_sorted_array_to_binary_search_tree;
 mod s0112_path_sum;
 mod s0113_path_sum_ii;
