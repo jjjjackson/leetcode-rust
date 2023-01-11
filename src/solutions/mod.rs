@@ -80,6 +80,7 @@ mod s1323_maximum_69_number;
 mod s1328_break_a_palindrome;
 mod s1329_sort_the_matrix_diagonally;
 mod s1338_reduce_array_size_to_the_half;
+mod s1443_minimum_time_to_collect_all_apples_in_a_tree;
 mod s1457_pseudo_palindromic_paths_in_a_binary_tree;
 mod s1523_count_odd_numbers_in_an_interval_range;
 mod s1544_make_the_string_great;
