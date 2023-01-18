@@ -66,6 +66,7 @@ mod s0869_reordered_power_of_2;
 mod s0871_minimum_number_of_refueling_stops;
 mod s0907_sum_of_subarray_minimums;
 mod s0916_word_subsets;
+mod s0918_maximum_sum_circular_subarray;
 mod s0926_flip_string_to_monotone_increasing;
 mod s0931_minimum_falling_path_sum;
 mod s0936_stamping_the_sequence;
