@@ -14,6 +14,7 @@ mod s0062_unique_paths;
 mod s0070_climbing_stairs;
 mod s0076_minimum_window_substring;
 mod s0091_decode_ways;
+mod s0093_restore_ip_addresses;
 mod s0094_binary_tree_inorder_traversal;
 mod s0098_validate_binary_search_tree;
 mod s0100_same_tree;
